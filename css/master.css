@@ -1,0 +1,107 @@
+/* utility class */
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main{
+  width: 100vw;
+  height: 100vh;
+}
+
+.container{
+  width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+/* end utility */
+
+/* navbar class */
+nav{
+  width: 100%;
+  height: 100px;
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+[class*="navbar-"]{
+  height: 100%;
+}
+/* navbar-left */
+.navbar-left{
+  width: 10%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo{
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/rev.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* navbar left end */
+
+/* navbar right  */
+.navbar-right{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+[class*="subnav-"]{
+  height: 100%;
+}
+
+.subnav-left{
+  width: 20%;
+}
+
+.subnav-left > ul{
+  height: 100px;
+  line-height: 100px;
+}
+
+.subnav-left > ul > li{
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.subnav-right{
+  width: 60%;
+}
+
+.subnav-right > ul{
+  height: 100px;
+  line-height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.dropdown-abbonamenti{
+  width: 200px;
+  height: 200px;
+  border: 2px solid lightgray;
+  border-radius: 5px;
+  display: none;
+}
+
+.dropdown-abbonamenti.active{
+  display: flex;
+}
+/* .subnav-right > ul > li{
+  display: inline-block;
+  margin-right: 15px;
+} */
+/* navbar right end */
+/* navbar end */
